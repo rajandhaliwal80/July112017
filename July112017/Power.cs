@@ -14,6 +14,7 @@ namespace July112017
         //PUBLIC PROPERTIES
         public string Name { get; set; }
         public  int RANK { get; set; }
-        //cONSTRUCTORS----------------------------------------------
+        //CONSTRUCTORS----------------------------------------------
+       
     }
 }

@@ -12,14 +12,22 @@ namespace July112017
     public class SuperHuman : Human 
     {
         // Private instance variables
-
+        private List<Power> _Powers;
         //public propertes
         //constructors-----------------------------------------------------
+        /// <summary>
+        /// this is the main constructor
+        /// </summary>
+        /// <param name="name"></param>
         public SuperHuman(string name):base (name)
         {
-
+            this._initialize();
         }
         //private methods
+        private void _initialize()
+        {
+            this._Powers = new List<Power>(); //this creates a empty list
+        }
         //public methods
     }
 }
