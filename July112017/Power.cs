@@ -15,6 +15,10 @@ namespace July112017
         public string Name { get; set; }
         public  int RANK { get; set; }
         //CONSTRUCTORS----------------------------------------------
-       
+       public Power(string name, int Rank)
+        {
+            this.Name = name;
+            this.RANK = Rank;
+        }
     }
 }

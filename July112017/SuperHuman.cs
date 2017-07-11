@@ -14,6 +14,11 @@ namespace July112017
         // Private instance variables
         private List<Power> _Powers;
         //public propertes
+        public List<Power> Powers()
+        {
+           
+        }
+
         //constructors-----------------------------------------------------
         /// <summary>
         /// this is the main constructor
@@ -29,5 +34,15 @@ namespace July112017
             this._Powers = new List<Power>(); //this creates a empty list
         }
         //public methods
+        /// <summary>
+        /// this method adds power to the power List
+        /// it takes two arguments name and rank
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public void AddPower(string name,int rank)
+        {
+            this.Powers.AddPower(new Power(name, rank));
+        }
     }
 }
