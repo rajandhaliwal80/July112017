@@ -12,7 +12,7 @@ namespace July112017
     public class SuperHuman : Human 
     {
         // Private instance variables
-        private List<Power> _Powers;
+        protected List<Power> _Powers;
         //public propertes
         public List<Power> Powers()
         {
@@ -43,6 +43,16 @@ namespace July112017
         public void AddPower(string name,int rank)
         {
             this.Powers.AddPower(new Power(name, rank));
+        }
+        /// <summary>
+        /// this method diplays each of the powers stored in the ower list
+        /// </summary>
+        public void DisplayPowers()
+        {
+            foreach(Power power in this.Powers)
+            {
+                Console.WriteLine("My power id"+ power.Name+"Rank:"+power.RANK);
+            }
         }
     }
 }
